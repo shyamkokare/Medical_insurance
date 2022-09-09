@@ -32,7 +32,7 @@ def get_insurance_charges():
     charges=med_ins.get_predicted_price()
 
     return jsonify({"Result": f"Predicted Medical Charges are : {charges}"})
-        
+    ######################################################################################    
 
 if __name__ == '__main__':
     app.run(host= '0.0.0.0', port = config.PORT_NUMBER,debug=False)
